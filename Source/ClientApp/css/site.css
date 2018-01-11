@@ -1,0 +1,158 @@
+.form-label {
+    left: 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.form-input {
+    position: absolute;
+    left: 130px;
+    width: 360px;
+    margin-left: 10px;
+}
+.form-wrap-left {
+    position: absolute;
+}
+.form-wrap-right {
+    position: absolute;
+    left: 560px;
+}
+.wrap-below-form {
+    position: absolute;
+    top: 520px;
+    width: 97%;
+}
+.form-checkbox {
+    width: 20px;
+}
+.form-info {
+    position: absolute;
+    width: 100px;
+    left: 400px;
+    color: #4189C7;
+    font-style: italic;
+    font-size: 10px;
+}
+.form-submit {
+    position: absolute;
+    margin: 0;
+}
+.mybutton {
+    position: absolute;
+    top: 470px;
+    height: 50px;
+    width: 120px;
+    color: white;
+    background-color: #4189C7;
+}
+.mybutton:hover {
+    background-color: #629dd0;
+}
+.mybutton-customerlist {
+    top: 30px;
+    left: 350px;
+}
+.newbutton {
+    left: 170px;
+}
+.mybutton-connection-string {
+    left: 320px;
+    width: 150px;
+    background-color: #ff6a00;
+}
+.del-buttom {
+    position: absolute;
+    width: 150px;
+    padding: 5px 10px;
+    left: 700px;
+    color: white;
+    background-color: red;
+    font-size: 15px;
+}
+.del-buttom:hover {
+    background-color: #ff4d4d;
+}
+.dialog-button {
+    height: 30px;
+    width: 75px;
+    margin-right: 10px;
+    color: white;
+    background-color: #4189C7;
+}
+.dialog-red-button {
+    background-color: #ff4d4d;
+}
+.textarea {
+    height: 75px;
+}
+.react-grid-Grid {
+    height: 7000px;
+}
+.react-grid-Cell  {
+    cursor: pointer;
+}
+.main-nav li .glyphicon {
+    margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.main-nav li a.active,
+.main-nav li a.active:hover,
+.main-nav li a.active:focus {
+    background-color: #4189C7;
+    color: white;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* On small screens, convert the nav menu to a vertical sidebar */
+    .main-nav {
+        height: 100%;
+        width: calc(15% - 20px);
+    }
+    .main-nav .navbar {
+        border-radius: 0px;
+        border-width: 0px;
+        height: 100%;
+    }
+    .main-nav .navbar-header {
+        float: none;
+    }
+    .main-nav .navbar-collapse {
+        border-top: 1px solid #444;
+        padding: 0px;
+    }
+    .main-nav .navbar ul {
+        float: none;
+    }
+    .main-nav .navbar li {
+        float: none;
+        font-size: 15px;
+        margin: 6px;
+    }
+    .main-nav .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+    .main-nav .navbar a {
+        /* If a menu item's text is too long, truncate it */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
